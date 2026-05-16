@@ -7,6 +7,9 @@ import hamster from '../assets/hamster.jpeg'
 import mouse from '../assets/mouse.jpeg'
 import penguin from '../assets/penguin.jpeg'
 import dog2 from '../assets/dog2.jpeg'
+import drinkcat from '../assets/drinkcat.jpeg'
+import duck from '../assets/duck.jpeg'
+import lizard from '../assets/lizard.jpeg'
 import frog from '../assets/frog.jpeg'
 
 import {useState} from 'react'
@@ -33,7 +36,7 @@ const Game = () => {
         const totalCards=gridSize*gridSize;
         const pairCount=Math.floor(totalCards/2);
         const memes=[ 
-            dog,cat,monkey,panda,hamster,mouse,penguin,dog2,frog
+            dog,cat,monkey,panda,hamster,mouse,penguin,dog2,frog,duck,lizard,drinkcat
         ]
         const numbers = memes.slice(0, pairCount);
         // const numbers=[...Array(pairCount).keys()].map((n)=>n+1);
@@ -86,7 +89,7 @@ const Game = () => {
     
 
     return (
-  <div className="min-h-screen bg-[#f28b8b] flex flex-col items-center justify-center px-4 py-8 overflow-hidden">
+  <div className="min-h-screen bg-[#f28b8b] flex flex-col items-center justify-center px-4 py-6 overflow-hidden">
 
     {/* TITLE */}
     <h1 className="text-4xl sm:text-6xl font-black text-black mb-6 tracking-tight text-center">
