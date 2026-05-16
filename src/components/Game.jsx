@@ -78,7 +78,7 @@ const Game = () => {
         }else{
             setTimeout(()=>{
                 setFlippedCards([])
-            },1000)
+            },500)
         }
     }
 
